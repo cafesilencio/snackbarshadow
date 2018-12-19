@@ -6,6 +6,7 @@ Usage:
 @RunWith(RobolectricTestRunner::class)
 
 @Config(shadows = [ShadowSnackbar::class])
+
 class MyTest {
 
     @Test
