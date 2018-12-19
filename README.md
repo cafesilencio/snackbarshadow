@@ -15,6 +15,6 @@ class MyTest {
 
         activity.doSomethingToTriggerASnackbar()
 
-        ShadowSnackbar.getTextOfLatestSnackbar() shouldEqual activity.getString(R.string.ok)
+        assertThat(ShadowSnackbar.getTextOfLatestSnackbar(), 'is'(activity.getString(R.string.ok))
     }
 }
